@@ -1,0 +1,184 @@
+section#chart div.wrap div.exchart{
+    max-width: 980px;
+    margin: 0 auto;
+    overflow: hidden
+  }
+  section#chart div.wrap div.exchart ul.flex {
+    
+    width: 400%;
+    counter-reset: movie-chart-counter;
+    position: relative;
+  }
+  
+  section#chart div.wrap div.exchart ul.flex li.flex { 
+    width: calc( ( 100% / 5 ) - 32px );
+    margin-right: 32px;
+    overflow: hidden;
+    position: relative;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex::before{
+    content: "";
+    width: 170px;
+    height: 234px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech1::before{
+    background-image: url(../img/exchart1.jpg);
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech2::before{
+    background-image: url(../img/exchart2.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech3::before{
+    background-image: url(../img/exchart3.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech4::before{
+    background-image: url(../img/exchart4.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech5::before{
+    background-image: url(../img/exchart5.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech6::before{
+    background-image: url(../img/exchart6.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech7::before{
+    background-image: url(../img/exchart7.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech8::before{
+    background-image: url(../img/exchart8.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech9::before{
+    background-image: url(../img/exchart9.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech10::before{
+    background-image: url(../img/exchart10.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech11::before{
+    background-image: url(../img/exchart11.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech12::before{
+    background-image: url(../img/exchart12.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech13::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech14::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech15::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech16::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech17::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech18::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech19::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech20::before{
+    background-image: url(../img/exchart13.jpg)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech1::after,section#chart div.wrap div.exchart ul.flex li.ech2::after,section#chart div.wrap div.exchart ul.flex li.ech10::after,section#chart div.wrap div.exchart ul.flex li.ech11::after,section#chart div.wrap div.exchart div.exchart ul.flex li.ech13::after{
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23age15)'%3e%3cpath d='M17.745 20H2.255A2.256 2.256 0 0 1 0 17.745V2.255A2.255 2.255 0 0 1 2.255 0h15.49A2.253 2.253 0 0 1 20 2.255v15.49A2.254 2.254 0 0 1 17.745 20Z' fill='%23DD742F'/%3e%3cpath d='M4.318 16.891v-9.94H3.217L4.643 3.11h2.761V16.89H4.318ZM16.313 7.815h-4.834v-2.02h5.052V3.107H8.45v7.342h5.177v3.85h-2.183v-1.812H8.45v4.095a.306.306 0 0 0 .307.308h7.556a.306.306 0 0 0 .308-.308V8.125a.307.307 0 0 0-.308-.31Z' fill='%23fff'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='age15'%3e%3cpath fill='%23fff' d='M0 0h20v20H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech3::after,section#chart div.wrap ul.flex li.ech5::after,section#chart div.wrap div.exchart ul.flex li.ech6::after,section#chart div.wrap div.exchart ul.flex li.ech7::after,section#chart div.wrap div.exchart ul.flex li.ech9::after,section#chart div.wrap div.exchart ul.flex li.ech14::after,section#chart div.wrap div.exchart ul.flex li.ech16::after,section#chart div.wrap div.exchart ul.flex li.ech17::after,section#chart div.wrap div.exchart ul.flex li.ech20::after{
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23age12)'%3e%3cpath d='M17.745 20H2.255A2.256 2.256 0 0 1 0 17.745V2.255A2.255 2.255 0 0 1 2.255 0h15.49A2.255 2.255 0 0 1 20 2.255v15.49A2.256 2.256 0 0 1 17.745 20Z' fill='%23E9B62F'/%3e%3cpath d='M4.328 16.891v-9.94H3.227L4.65 3.108h2.761V16.89H4.328ZM16.303 3.109H8.765a.308.308 0 0 0-.307.307v4.165h3.013V5.706h2.13v1.659l-5.258 7.488v2.022h8.228v-2.69h-4.396l3.842-5.394c.12-.17.216-.32.29-.443.068-.12.128-.243.18-.37.05-.127.083-.26.098-.397.02-.173.029-.348.027-.522V3.416a.307.307 0 0 0-.309-.307Z' fill='%23fff'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='age12'%3e%3cpath fill='%23fff' d='M0 0h20v20H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e") 
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech4::after,section#chart div.wrap div.exchart ul.flex li.ech8::after,section#chart div.wrap div.exchart ul.flex li.ech12::after,section#chart div.wrap div.exchart ul.flex li.ech15::after,section#chart div.wrap div.exchart ul.flex li.ech18::after,section#chart div.wrap div.exchart ul.flex li.ech19::after{
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23ageAll)'%3e%3cpath d='M17.745 20H2.256A2.256 2.256 0 0 1 0 17.745V2.255A2.255 2.255 0 0 1 2.256 0h15.49A2.253 2.253 0 0 1 20 2.255v15.49A2.254 2.254 0 0 1 17.745 20Z' fill='%23269C56'/%3e%3cpath d='M5.74 15.076 5.5 13.56H3.748l-.24 1.516H1.24v-.027L3.383 4.898h2.47l2.144 10.145v.027l-2.256.006ZM4.627 8.18l-.56 3.462h1.116L4.626 8.18ZM8.402 15.078V4.904h2.264v8.136h2.663v2.038H8.402ZM13.808 15.076V4.904h2.263v8.136h2.664v2.038l-4.927-.002Z' fill='%23fff'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='ageAll'%3e%3cpath fill='%23fff' d='M0 0h20v20H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e")
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex:nth-of-type(5n){
+    margin-right: 0;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex h3 {
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex h3::before{
+    content: "";
+    content: counter(movie-chart-counter);
+    counter-increment: movie-chart-counter;
+    position: absolute;
+    bottom: 53px;
+    left: 17px;
+    color: white;
+    font-size: 55px;
+    font-style: oblique;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex div.flex {
+    
+    justify-content: space-around;
+  }
+  section#chart div.wrap ul.flex li.flex div.flex p.p {
+    
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex div.flex p.p:nth-child(1){
+    
+    display: flex;
+    gap: 3px;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex div.flex p.p:nth-child(1)::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech1 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech3 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech7 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech8 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech9 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech11 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech13 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech15 div.flex p.p:nth-child(1)::before{
+    background-image: url(../img/egg.png)
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech2 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech4 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech5 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech6 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech12 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech14 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech16 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech17 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech18 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech19 div.flex p.p:nth-child(1)::before,section#chart div.wrap div.exchart ul.flex li.ech20 div.flex p.p:nth-child(1)::before{
+    background-image: url(../img/goldegg.png);
+  }
+  section#chart div.wrap div.exchart ul.flex li.ech10 div.flex p.p:nth-child(1)::before{
+    background-image: url(../img/goldegg2.png);
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex span {  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    width: 170px;
+    padding: 81px 0; 
+    opacity: 0; 
+    transition: all 0.5s;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex span:hover{
+   opacity: 1;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex span a {
+    width: 120px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 10px;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex span a:nth-child(1){
+    
+    background-color: #ffffff;
+  }
+  section#chart div.wrap div.exchart ul.flex li.flex span a:nth-child(2){
+    
+    background-color: #FB4357;
+  }

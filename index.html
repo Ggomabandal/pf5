@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV홈페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/wgnb.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/special.css">
+    <link rel="stylesheet" href="css/etc.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 제이쿼리 자바스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"type=text/javascript></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            // 헤더
+            $("header div.navwrap .nav ul.menu li a.a").mouseenter(function(){
+                $("div.wgnb").slideDown();
+                return false;
+            });
+            $("#title").mouseenter(function(){
+                $("div.wgnb").slideUp();
+            });
+            // 섹션 차트 하이드 및 쇼
+            $("section#chart div.wrap div.exchart").hide();
+            $("section#chart div.wrap div.h2 h2 a:nth-child(1)").click(function(){
+                $("section#chart div.wrap div.chart").show();
+                $("section#chart div.wrap div.exchart").hide();
+                return false;
+            });
+            $("section#chart div.wrap div.h2 h2 a:nth-child(2)").click(function(){
+                $("section#chart div.wrap div.exchart").show();
+                $("section#chart div.wrap div.chart").hide();
+                return false;
+            });
+            // 섹션 스페셜 마우스 이벤트
+            $("section#special div.wrap article div.hidden div.place a").not("section#special div.wrap article div.hidden div.place a:eq(0)").hide();
+            var n=0;n++;
+            $("section#special div.wrap article ul li:eq("+n+") a").mouseenter(function(){
+                $("section#special div.wrap article div.hidden div.place a:eq("+n+")").show();
+                $("section#special div.wrap article div.hidden div.place a:eq("+n+")").siblings().hide();
+            });
+        });
+    </script>
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.chartani').slick({
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 5
+            });
+            $('.exchartani').slick({
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 5
+            });
+            $('.eventani').slick({
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header>
+        <div class="wrap flex flex-column">
+            <div class="header flex flex-between flex-align-center">
+                <h1 class="h2">
+                    <a href="" class="img">cgv</a>
+                    <a href="" class="memo">CULTUREPLEX</a>                    
+                </h1>
+                <a href="" class="point">현대카드<br />6천 M포인트 사용!</a>
+                <ul class="contents flex">
+                    <li><a href="" class="a">로그인</a></li>
+                    <li><a href="" class="a">회원가입</a></li>
+                    <li><a href="" class="a">MY CGV</a></li>
+                    <li><a href="" class="a">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navwrap flex flex-align-center">
+            <div class="nav flex flex-between flex-align-center">
+                <ul class="menu flex">
+                    <li><a href="" class="a">영화</a></li>
+                    <li><a href="" class="a">극장</a></li>
+                    <li><a href="" class="a">예매</a></li>
+                    <li><a href="" class="a">스토어</a></li>
+                    <li><a href="" class="a">이벤트</a></li>
+                    <li><a href="" class="a">혜택</a></li>
+                </ul>
+                <form action="" class="search">
+                    <input type="text">
+                    <button class="search">검색</button>
+                </form>
+            </div>
+            <div class="wgnb">
+                <div class="center flex">
+                    <div class="wsub">
+                        <h2 class="h5">영화</h2>
+                        <ul>
+                            <li><a href="">무비차트</a></li>
+                            <li><a href="">아트하우스</a></li>
+                            <li><a href="">ICECON</a></li>
+                        </ul>
+                    </div>
+                    <div class="wsub">
+                        <h2 class="h5">극장</h2>
+                        <ul>
+                            <li><a href="">CGV 극장</a></li>
+                            <li><a href="">특별관</a></li>
+                        </ul>
+                    </div>
+                    <div class="wsub">
+                        <h2 class="h5">예매</h2>
+                        <ul>
+                            <li><a href="">빠른예매</a></li>
+                            <li><a href="">상영스케줄</a></li>
+                            <li><a href="">English Ticketing</a></li>
+                            <li><a href="">English Schedule</a></li>
+                        </ul>
+                    </div>
+                    <div class="wsub">
+                        <h2 class="h5">스토어</h2>
+                        <ul>
+                            <li><a href="">패키지</a></li>
+                            <li><a href="">영화관람권</a></li>
+                            <li><a href="">기프트카드</a></li>
+                            <li><a href="">콤보</a></li>
+                            <li><a href="">팝콘</a></li>
+                            <li><a href="">음료</a></li>
+                            <li><a href="">스낵</a></li>
+                            <li><a href="">플레이존</a></li>
+                            <li><a href="">씨네샵</a></li>
+                        </ul>
+                    </div>
+                    <div class="wsub">
+                        <h2 class="h5">이벤트</h2>
+                        <ul>
+                            <li><a href="">SPECIAL</a></li>
+                            <li><a href="">영화/예매</a></li>
+                            <li><a href="">멤버십/CLUB</a></li>
+                            <li><a href="">CGV 극장별</a></li>
+                            <li><a href="">제휴할인</a></li>
+                            <li><a href="">당첨자 발표</a></li>
+                            <li><a href="">종료된 이벤트</a></li>
+                        </ul>
+                    </div>
+                    <div class="wsub">
+                        <h2 class="h5">혜택</h2>
+                        <ul>
+                            <li><a href="">CGV 할인정보</a></li>
+                            <li><a href="">CLUB 서비스</a></li>
+                            <li><a href="">VIP 라운지</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 타이틀 영역 -->
+    <div id="title">
+        <div class="wrap">
+            <div class="movie">
+                <div class="video_wrap">
+                    <video autoplay muted controls>
+                        <source src="img/thenun2.mp4" id="j_movie" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <ul class="flex flex-column">
+                <li>
+                    <h2 class="h3">더 넌 2</h2>
+                </li>
+                <li>
+                    <p>‘컨저링 유니버스’ 속 가장 강력한<br />심장 ‘발락’ 레전드 공포의 컴백</p>
+                </li>
+            </ul>
+            <div class="playsound">
+                <a href="">상세보기</a>
+                <form action="" class="play"><button class="play">play</button></form>
+                <form action="" class="sound"><button class="sound">sound</button></form>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- 메인영역 -->
+        <!-- 섹션차트 -->
+        <section id="chart">
+            <div class="wrap paddingT50 paddingB50">
+                <div class="h2 flex">
+                    <h2>
+                        <ul>
+                            <li><a href="">무비차트</a></li>
+                            <li><a href="">상형예정작</a></li>
+                        </ul>
+                    </h2>
+                    <span><a class="all" href="">전체보기</a></span>
+                </div>
+                <div class="chart hidden">    
+                    <ul class="chartani">
+                        <li class="ch1 flex flex-column">
+                            <h3>밀수</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 36.9%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch2 flex flex-column">
+                            <h3>미션임파서블-데드 레코닝 PART ONE</h3>
+                            <div class="flex">
+                                <p class="p">97%</p>
+                                <p class="p">예매율 10.5%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch3 flex flex-column">
+                            <h3>더 문</h3>
+                            <div class="flex">
+                                <p class="p">98%</p>
+                                <p class="p">예매율 9.8%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch4 flex flex-column">
+                            <h3>엘리멘탈</h3>
+                            <div class="flex">
+                                <p class="p">98%</p>
+                                <p class="p">예매율 8.2%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch5 flex flex-column">
+                            <h3>명탐정코난-흑철의 어영</h3>
+                            <div class="flex">
+                                <p class="p">97%</p>
+                                <p class="p">예매율 7.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch6 flex flex-column">
+                            <h3>비공식작전</h3>
+                            <div class="flex">
+                                <p class="p">98%</p>
+                                <p class="p">예매율 5.2%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch7 flex flex-column">
+                            <h3>바비</h3>
+                            <div class="flex">
+                                <p class="p">87%</p>
+                                <p class="p">예매율 5.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch8 flex flex-column">
+                            <h3>핑크퐁 시네마 콘서트3-진저브레드맨을 잡아라</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 3.8%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch9 flex flex-column">
+                            <h3>인시디어스-빨간문</h3>
+                            <div class="flex">
+                                <p class="p">80%</p>
+                                <p class="p">예매율 1.7%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch10 flex flex-column">
+                            <h3>헌티드 맨션</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 1.7%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch11 flex flex-column">
+                            <h3>극장판 슈퍼윙스-맥시멈 스피드</h3>
+                            <div class="flex">
+                                <p class="p">95%</p>
+                                <p class="p">예매율 1.6%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch12 flex flex-column">
+                            <h3>비닐하우스</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 1.2%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch13 flex flex-column">
+                            <h3>더 퍼스트 슬램덩크</h3>
+                            <div class="flex">
+                                <p class="p">97%</p>
+                                <p class="p">예매율 1.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch14 flex flex-column">
+                            <h3>콘크리트 유토피아</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 1.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch15 flex flex-column">
+                            <h3>여름날 우리</h3>
+                            <div class="flex">
+                                <p class="p">94%</p>
+                                <p class="p">예매율 0.9%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch16 flex flex-column">
+                            <h3>극장판 도라에몽-진구와 하늘의 유토피아</h3>
+                            <div class="flex">
+                                <p class="p">94%</p>
+                                <p class="p">예매율 0.8%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch17 flex flex-column">
+                            <h3>엔니오-더 마에스트로</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 0.3%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch18 flex flex-column">
+                            <h3>스파이더맨-어크로스 더 유니버스</h3>
+                            <div class="flex">
+                                <p class="p">93%</p>
+                                <p class="p">예매율 0.3%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch19 flex flex-column">
+                            <h3>10CM City Live with CGV</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 0.3%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ch20 flex flex-column">
+                            <h3>슈퍼키드 헤일리</h3>
+                            <div class="flex">
+                                <p class="p">92%</p>
+                                <p class="p">예매율 0.2%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" exchart hidden">    
+                    <ul class="exchartani">
+                        <li class="ech1 flex flex-column">
+                            <h3>아이유 콘서트 : 더 골든 아워</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 42,8%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech2 flex flex-column">
+                            <h3>베니스 유령 살인사건</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 10.4%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech3 flex flex-column">
+                            <h3>어파이어</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 1.8%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech4 flex flex-column">
+                            <h3>[씨네뮤지엄 Season2.] 프라도 미술관</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech5 flex flex-column">
+                            <h3>뮤직 샤펠</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech6 flex flex-column">
+                            <h3>잔고-분노의 적자</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech7 flex flex-column">
+                            <h3>안녕, 내일 또 만나</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech8 flex flex-column">
+                            <h3>차박- 살인과 낭만의 밤</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech9 flex flex-column">
+                            <h3>책 종이 가위</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech10 flex flex-column">
+                            <h3>쿠렌치스 인 잘츠부르크</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech11 flex flex-column">
+                            <h3>여름을 향한 터널, 이별의 출구</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 6.4%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech12 flex flex-column">
+                            <h3>닌자터틀-뮤턴트 대소동</h3>
+                            <div class="flex">
+                                <p class="p">99%</p>
+                                <p class="p">예매율 0.3%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech13 flex flex-column">
+                            <h3>독립보행1</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech14 flex flex-column">
+                            <h3>새벽보행1</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech15 flex flex-column">
+                            <h3>독립보행3</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.1%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech16 flex flex-column">
+                            <h3>독립보행2</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech17 flex flex-column">
+                            <h3>랜선비행</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech18 flex flex-column">
+                            <h3>새벽비행2</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech19 flex flex-column">
+                            <h3>아시아 파노라마</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                        <li class="ech20 flex flex-column">
+                            <h3>아시아로1</h3>
+                            <div class="flex">
+                                <p class="p">?</p>
+                                <p class="p">예매율 0.0%</p>
+                            </div>
+                            <span><a href="">상세보기</a><a href="">예매하기</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 섹션이벤트 -->
+        <section id="event">
+            <div class="wrap flex flex-column padding50">
+                <div class="flex flex-between">
+                    <h2 class="h3">EVENT</h2>
+                    <span>
+                        <a href="" class="stop">stop</a><a href="" class="all">전체보기</a>
+                    </span>
+                </div>
+                <div class="hidden">
+                    <ul class="eventani">
+                        <li class="event1">
+                            <a href="">
+                                <h3 class="h5">[핑크퐁 시네마 콘서트3]핑크퐁의 무릎 해방 일지</h3>
+                                <time>2023.07.21~2023.08.15</time>
+                            </a>
+                        </li>
+                        <li class="event2">
+                            <a href="">
+                                <h3 class="h5">[극장판 슈퍼윙스]여름방학 스페셜 상영회</h3>
+                                <time>2023.07.20~2023.07.30</time>
+                            </a>
+                        </li>
+                        <li class="event3">
+                            <a href="">
+                                <h3 class="h5">[바비] N차 관람 이벤트</h3>
+                                <time>2023.07.19~2023.07.30</time>
+                            </a>
+                        </li>
+                        <li class="event4">
+                            <a href="">
+                                <h3 class="h5">[한국 영화 BIG3] IMAX 릴레이 특가</h3>
+                                <time>2023.07.12~2023.08.14</time>
+                            </a>
+                        </li>
+                        <li class="event5">
+                            <a href="">
+                                <h3 class="h5">[밀수]필름마크</h3>
+                                <time>2023.07.20~2023.08.10</time>
+                            </a>
+                        </li>
+                        <li class="event6">
+                            <a href="">
+                                <h3 class="h5">[엘리멘탈] 흥행 감사인생네컷 증정 이벤트</h3>
+                                <time>2023.07.18~2023.07.30</time>
+                            </a>
+                        </li>
+                        <li class="event7">
+                            <a href="">
+                                <h3 class="h5">MOINTS 커뮤니티신규 론칭 이벤트!</h3>
+                                <time>2023.07.18~2023.08.22</time>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 섹션스페셜 -->
+        <section id="special">
+            <div class="wrap flex flex-column padding50">
+                <div class="jemok flex flex-between">
+                    <h2 class="h3">특별관</h2>
+                    <a href="">전체보기</a>
+                </div>
+                <article class="flex">
+                    <div class="hidden">
+                        <div class="place">
+                            <a href="">사진</a>
+                            <a href="">사진</a>
+                            <a href="">사진</a>
+                            <a href="">사진</a>
+                        </div>
+                    </div>
+                    <ul class="flex flex-column">
+
+                        <li>
+                            <a href="">
+                                <h3 class="h4">SUITE CINEMA</h3>
+                                <p class="p">#호텔 컨셉의 프리미엄관</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">CINE & LIVINGROOM</h3>
+                                <p class="p">#신개념 소셜 상영관</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">4DX</h3>
+                                <p class="p">#모션시트 #오감체험</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">CINE de CHEF</h3>
+                                <p class="p">#쉐프가 있는 영화관</p>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <!-- 섹션 etc -->
+        <section id="etc">
+            <div class="wrap flex padding50">
+                <article class="package">
+                    <div class="jemok">
+                        <h2 class="h5">패키지</h2>
+                        <a href="" class="more">더보기</a>
+                    </div>
+                    <ul class="flex flex-column">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3><런닝맨: 리벤져스> 얼리버드 전용 관람권</h3>
+                                    <p class="price p">16,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3><핑크퐁 시네마 콘서트3> 패키지 관람권(성인+아동)</h3>
+                                    <p class="price p">14,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>우리 패키지</h3>
+                                    <p class="price p">61,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="tiket flex flex-column">
+                    <div class="jemok">
+                        <h2 class="h5">영화관람권</h2>
+                        <a href="" class="more">더보기</a>
+                    </div>
+                    <ul class="flex flex-column">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>CGV 골드클래스</h3>
+                                    <p class="price p">40,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>CGV 영화관람권</h3>
+                                    <p class="price p">13,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>4DX관람권</h3>
+                                    <p class="price p">19,000원</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="gift flex flex-column">
+                    <div class="jemok">
+                        <h2 class="h5">기프트카드</h2>
+                        <a href="" class="more">더보기</a>
+                    </div>
+                    <ul class="flex flex-column">
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>파코니야 여름을부탁해</h3>
+                                    <p class="price p">금액충전형</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>파코니의 썸머파티</h3>
+                                    <p class="price p">금액충전형</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div>
+                                    <h3>PACONNIE A형</h3>
+                                    <p class="price p">금액충전형</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="info">
+            <div class="wrap flex paddingB50">
+                <article class="flex">
+                    <div class="qcenter">
+                        <ul class="flex flex-column">
+                            <li>
+                                <h2 class="h4">공지사항</h2>
+                                <a href="">[기타]개인정보처리방침 및 위치기반서비스 이용약관 개정 안내 (8/1 字 시행)</a><a href="" class="more">더보기</a></li>
+                            <li>
+                                <h2 class="h4">고객센터</h2>
+                                <span>
+                                    <p>1544-1122</p>
+                                    <p>고객센터 운영시간 (평일 09:00~18:00)</p>
+                                    <p>업무시간 외 자동응답 안내 가능합니다.</p>
+                                </span>
+                            </li>
+                            <li><a href="">FAQ</a><a href="">1:1 문의</a><a href="">대관/단체 문의</a></li>
+                        </ul>
+                    </div>
+                    <div class="app flex flex-column">
+                        <h2 class="h4">앱 다운로드</h2>
+                        <p>cgv앱에서 더 편리하게 이용하세요</p>
+                        <p>그림</p>
+                        <p>QR코드를 스캔하고<br />앱설치 페이지로 바로 이동하세요</p>
+                    </div>
+                </article>
+                <div class="hidden">
+                    <div class="card">
+                        <a href="">그림</a><a href="">그림</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="kkk">
+            <span></span>
+            <span><a href="">크크크</a></span>
+            <span></span>
+        </div>
+        <div class="wrap paddingB50">
+            <ul class="fnb flex">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">지속가능경영</a></li>
+                <li><a href="">IR</a></li>
+                <li><a href="">채용정보</a></li>
+                <li><a href="">광고/제휴/출점문의</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">편성기준</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">법적고지</a></li>
+                <li><a href="">이메일주소무단수집거부</a></li>
+                <li><a href="">윤리경영</a></li>
+                <li><a href="">사이버감사실</a></li>
+            </ul>
+            <address>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br />대표이사
+                허민회 사업자등록번호 104-81-45690 통신판매업신고번호 2017-서울용산-0662 <a href="">사업자정보확인</a><br />
+                호스팅사업자 CJ올리브네트웍스 개인정보보호 책임자 도형구 대표이메일 cjcgvmaster@cj.net<br />© CJ CGV. All Rights Reserved</address>
+            <div>
+                <select name="" id="famliy">
+                    <optgroup label="CJ그룹">
+                        <option value="">CJ주식회사</option>
+                    </optgroup>
+                    <optgroup label="식품 & 식품서비스">
+                        <option value="">CJ제일제당</option>
+                        <option value="">CJ푸드빌</option>
+                        <option value="">CJ프레시웨이</option>
+                    </optgroup>
+                    <optgroup label="생명공학">
+                        <option value="">CJ제일제당 BIO사업부문</option>
+                        <option value="">Cj Feed&Card</option>
+                    </optgroup>
+                    <optgroup label="물류 & 신유통">
+                        <option value="">CJ대한통운</option>
+                        <option value="">CJ대한통운 건설부문</option>
+                        <option value="">CJ올리브영</option>
+                        <option value="">CJ올리브네트웍스</option>
+                        <option value="">CJ ENM커머스부문</option>
+                    </optgroup>
+                    <optgroup label="엔터테이먼트 & 미디어">
+                        <option value="">CJ ENM 엔터테인먼트부문</option>
+                        <option value="">CGV</option>
+                    </optgroup>
+                </select>
+                <button>GO</button>
+            </div>
+        </div>
+        <span><a class="ticketing" href="">예메하기</a><a class="up" href="#top">위로</a></span>
+    </footer>    
+</body>
+</html>

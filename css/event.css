@@ -1,0 +1,143 @@
+section#event {
+  
+}
+section#event div.wrap {
+  
+  max-width: 1020px;
+}
+section#event div.wrap > div {
+  
+  align-items: center;
+  width: 980px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+section#event div.wrap > div h2 {
+  
+  line-height: 30px;
+  font-weight: 500;
+}
+section#event div.wrap > div span {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+section#event div.wrap > div span a {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#event div.wrap > div span a.stop{
+  
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 100%;
+  font-size: 0;
+  border-color: #EEEEEE;
+}
+section#event div.wrap > div span a.stop::after{
+
+  background-image: url(../img/stop.png);
+}
+section#event div.wrap > div span a.all{
+  width: 100px;
+  height: 30px;
+  border: 1px solid;
+  line-height: 30px;
+  border-radius: 20px;
+  justify-content: space-around;
+  font-size: 13px;
+  border-color: #EEE;
+}
+section#event div.wrap > div span a::after{
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+section#event div.wrap > div span a.all::after{
+  background-image: url(../img/arrow.png);
+}
+section#event div.wrap div.hidden{
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section#event div.wrap ul button.slick-prev{
+  left: -16px;
+  top: calc((243px - 40px) / 2);
+}
+section#event div.wrap ul button.slick-prev::before{
+  
+}
+section#event div.wrap ul button.slick-next{
+  right: -16px;
+  top: calc((243px - 40px) / 2);
+  z-index: 0;
+}
+section#event div.wrap ul button.slick-next::before{
+  
+}
+section#event .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
+  
+}
+section#event div.wrap div.hidden ul{
+  
+}
+section#event div.wrap div.hidden ul li{
+  width: 310px;
+  height: 243px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#event div.wrap div.hidden ul li::before{
+  content: ""; 
+  width: 310px;
+  height: 207px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+section#event div.wrap div.hidden ul li:nth-child(1)::before{
+  background-image: url(../img/event1.jpg)
+}
+section#event div.wrap div.hidden ul li:nth-child(2)::before{
+  background-image: url(../img/event2.jpg)
+}
+section#event div.wrap div.hidden ul li:nth-child(3)::before{
+  background-image: url(../img/event3.jpg)
+}
+section#event div.wrap div.hidden ul li:nth-child(4)::before{
+  background-image: url(../img/event4.jpg)
+}
+section#event div.wrap div.hidden ul li:nth-child(5)::before{
+  background-image: url(../img/event5.jpg)
+}
+section#event div.wrap div.hidden ul li:nth-child(6)::before{
+  background-image: url(../img/event6.jpg)
+}
+section#event div.wrap div.hidden ul li:nth-child(7)::before{
+  background-image: url(../img/event7.jpg)
+}
+section#event div.wrap div.hidden ul li a {
+
+  width: 310px;
+  height: 40px;
+}
+section#event div.wrap div.hidden ul li a h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section#event div.wrap div.hidden ul li a time {
+  
+}

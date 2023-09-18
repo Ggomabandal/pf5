@@ -1,0 +1,118 @@
+section#etc {
+  
+}
+section#etc div.wrap {
+  
+  gap: 30px;
+}
+section#etc div.wrap article {
+  
+  width: calc( 100% / 3 );
+  padding: 20px 20px;
+  height: 375px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: #E4E4E4;
+}
+section#etc div.wrap article div.jemok {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+section#etc div.wrap article div.jemok h2 {
+  
+}
+section#etc div.wrap article div.jemok a.more {
+  
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 20px;
+  font-size: 11px;
+  border-color: #F4F4F4;
+  color: #906677;
+}
+section#etc div.wrap article ul {
+
+  row-gap: 30px;
+}
+section#etc div.wrap article.package ul {
+  row-gap: 30px;
+}
+section#etc div.wrap article ul li {
+  
+}
+section#etc div.wrap article ul li a {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+section#etc div.wrap article ul li a::before{
+  content: "";
+}
+section#etc div.wrap article.tiket ul li a::before,section#etc div.wrap article.gift ul li a::before{
+  width: 75px;
+  height: 76px;
+  display: block;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+section#etc div.wrap article.package ul li a::before{
+  width: 60px;
+  height: 75px;
+  display: block;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+section#etc div.wrap article.package ul li:nth-child(1) a::before{
+  background-image: url(../img/package1.jpg);
+}
+section#etc div.wrap article.package ul li:nth-child(2) a::before{
+  background-image: url(../img/package2.jpg);
+}
+section#etc div.wrap article.package ul li:nth-child(3) a::before{
+  background-image: url(../img/package3.jpg);
+}
+section#etc div.wrap article.tiket ul li:nth-child(1) a::before{
+  background-image: url(../img/tiket1.jpg);
+}
+section#etc div.wrap article.tiket ul li:nth-child(2) a::before{
+  background-image: url(../img/tiket2.jpg);
+}
+section#etc div.wrap article.tiket ul li:nth-child(3) a::before{
+  background-image: url(../img/tiket3.jpg);
+}
+section#etc div.wrap article.gift ul li:nth-child(1) a::before{
+  background-image: url(../img/gift1.jpg);
+}
+section#etc div.wrap article.gift ul li:nth-child(2) a::before{
+  background-image: url(../img/gift2.jpg);  
+}
+section#etc div.wrap article.gift ul li:nth-child(3) a::before{
+  background-image: url(../img/gift3.jpg);
+}
+section#etc div.wrap article.package ul li a div {
+
+  line-height: 1.5;
+}
+section#etc div.wrap article.package ul li a div h3{
+
+  width: 180px;
+}
+section#etc div.wrap article.package ul li a div p{
+
+}
+section#etc div.wrap article ul li a div{
+  line-height: 1.5;
+}
+section#etc div.wrap article ul li a div h3 {
+
+}
+section#etc div.wrap article ul li a div p {
+  
+}

@@ -1,0 +1,107 @@
+#title {
+  background-color: #000000;
+  position: relative
+}
+
+div#title::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#title .wrap {
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+#title .wrap div.movie{
+  
+  position: absolute;
+  left: -80px;
+  top: -86px;
+  height: 700px;
+}
+#title .wrap div.movie div.video_wrap{
+  
+}
+#title .wrap div.movie div.video_wrap video{
+  
+  height: 670px;
+}
+#title .wrap div.movie div.video_wrap video source{
+  
+}
+#title .wrap div.movie div.video_wrap video #j_movie{
+  
+}
+#title .wrap ul.flex {
+  z-index: 1;
+  color: white;
+  line-height: 1.6;
+  margin-left: 15px;
+}
+#title .wrap ul.flex li { 
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  margin: 10px 0;
+}
+#title .wrap ul.flex li .h3 {
+  
+  font-weight: 500;
+}
+#title .wrap ul.flex li p {
+  
+}
+#title .wrap div.playsound{
+  
+  display: flex;
+  gap: 7px;
+}
+#title .wrap div.playsound a {
+  padding: 3px 30px;
+  border-radius: 30px;
+  background-color: #CDCECE;
+  z-index:1;
+  box-sizing: border-box;
+}
+#title .wrap div.playsound form.play {
+  display: flex;
+}
+#title .wrap div.playsound form.play button.play {  
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 100%;
+  background-image: url(../img/play.svg);
+  background-size: contain;
+  font-size: 0;
+  border: 1px solid;
+  border-color:#979797;
+  z-index: 1;
+}
+#title .wrap div.playsound form.sound {  
+  display: flex;
+}
+#title .wrap div.playsound form.sound button.sound {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 100%;
+  background-image: url(../img/sound.svg);
+  background-size: contain;
+  font-size: 0;
+  border: 1px solid;
+  border-color:#979797;
+  z-index: 1;
+}

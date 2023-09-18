@@ -1,0 +1,140 @@
+section#info {
+  
+}
+section#info div.wrap {
+  
+  gap: 20px;
+}
+section#info div.wrap article {
+  
+  width: 75%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: #E4E4E4;
+}
+section#info div.wrap article div.qcenter {
+  
+  padding-right: 20px;
+  box-sizing: border-box;
+  width: 75%;
+  border-right: 1px solid;
+  border-color: #E4E4E4;
+}
+section#info div.wrap article div.qcenter ul {
+  row-gap: 20px;
+}
+section#info div.wrap article div.qcenter ul li:nth-child(3) {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+section#info div.wrap article div.qcenter ul li h2 {
+  
+  font-size: 17px;
+  height: 20px;
+}
+section#info div.wrap article div.qcenter ul li:nth-child(3) a {
+  
+  margin-left: 16px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+  padding: 0 20px;
+}
+section#info div.wrap article div.qcenter ul li a.more {
+  
+  width: 60px;
+  border-radius: 20px;
+}
+section#info div.wrap article div.qcenter ul li:nth-child(2) {
+  
+  display: flex;
+  gap: 20px;
+  line-height: 1.6;
+}
+section#info div.wrap article div.qcenter ul li span {
+  
+  line-height: 1.6;
+}
+section#info div.wrap article div.qcenter ul li span p {
+  
+  font-size: 15px;
+  font-weight: 300;
+}
+section#info div.wrap article div.qcenter ul li:nth-child(1) {
+  
+  display: flex;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  gap: 20px;
+  box-sizing: border-box;
+  height: 48px;
+  align-items: center;
+  border-color:#E4E4E4;
+}
+section#info div.wrap article div.qcenter ul li:nth-child(1) a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  border-color: #E4E4E4;
+}
+section#info div.wrap article div.qcenter ul li:nth-child(1) a:nth-of-type(2) {
+
+  font-size: 10px;
+}
+section#info div.wrap div.app {
+  
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 25%;
+  line-height: 1.7;
+  align-items: center;
+  text-align: center;
+}
+section#info div.wrap div.app h2 {
+  
+}
+section#info div.wrap div.app p {
+  font-size: 11px;
+  font-weight: 300;
+}
+section#info div.wrap div.app p:nth-of-type(2){
+ 
+  width: 100px;
+  height: 100px;
+  font-size: 0;
+  border: 1px solid;
+}
+section#info div.wrap div.hidden {
+  width: 25%;
+  overflow: hidden;
+}
+section#info div.wrap div.hidden div.card {
+  
+  height: 100%;
+  display: flex;
+  width: 200%;
+}
+section#info div.wrap div.hidden div.card a {
+  
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 0;
+  background-size: cover;
+}
+section#info div.wrap div.hidden div.card a:nth-child(1){
+  
+  background-image: url(../img/card1.png);
+}
+section#info div.wrap div.hidden div.card a:nth-child(2){
+  
+  background-image: url(../img/card2.png);
+}

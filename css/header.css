@@ -1,0 +1,122 @@
+header {
+  
+}
+header .wrap {
+  
+  padding: 30px 20px 5px 20px;
+  box-sizing: border-box;
+}
+header .wrap .header {
+  margin-bottom: 30px;
+}
+header .wrap .header h1.h2 {  
+  display: flex;
+  align-items: end;
+}
+header .wrap .header h1.h2 a.a {
+  
+}
+header .wrap .header h1.h2 a.img {  
+  background-image: url(../img/cgv.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+  width: 100px;
+  height: 46px;
+}
+header .wrap .header h1.h2 a.memo {  
+  font-size: 15px;
+}
+header .wrap .header a.point {  
+  background-image: url(../img/point.png);
+  font-size: 0;
+  width: 139px;
+  height: 45px;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  right: 43%;
+}
+header .wrap .header ul.contents {  
+  gap: 30px;
+}
+header .wrap .header ul.contents li {  
+}
+header .wrap .header ul.contents li a{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .wrap .header ul.contents li a.a::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-size: contain;
+}
+header .wrap .header ul.contents li:nth-of-type(1) a.a::before{
+  background-image: url(../img/con1.png)
+}
+header .wrap .header ul.contents li:nth-of-type(2) a.a::before{
+  background-image: url(../img/con2.png)
+}
+header .wrap .header ul.contents li:nth-of-type(3) a.a::before{
+  background-image: url(../img/con3.png)
+}
+header .wrap .header ul.contents li:nth-of-type(4) a.a::before{
+  background-image: url(../img/con4.png)
+}
+
+header div.navwrap{
+  justify-content: center;
+  border-top: 1px solid;
+  border-top-color: #EEEEEE;
+  position: relative;
+}
+header div.navwrap .nav {
+  width: 980px;
+  height: 60px;
+  padding: 5px 20px 5px 20px;
+  box-sizing: border-box;
+}
+header div.navwrap .nav ul.menu {  
+  gap: 50px;
+}
+header div.navwrap .nav ul.menu li {
+  
+}
+header div.navwrap .nav ul.menu li:nth-of-type(3) a.a{
+  color: red;
+}
+header div.navwrap .nav ul.menu li a.a {
+  
+  padding: 19px 10px;
+  box-sizing: border-box;
+}
+header div.navwrap .nav form.search {
+  
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-bottom: none;
+  border-top: none;
+  border-color: #CACACA;
+  padding: 0 10px;
+}
+header div.navwrap .nav form.search input{
+  
+  border: none;
+  height: 25px;
+}
+header div.navwrap .nav form.search button{
+  
+  background-image: url(../img/search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}

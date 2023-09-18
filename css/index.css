@@ -1,0 +1,15 @@
+/* 공통스타일 class */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  .full{
+    width: auto;
+  }
+  .wrap{
+    max-width: 980px;
+    margin: 0 auto;  
+  }
+  .hide{
+   /* 안보이게 */
+    display: none;
+  }
