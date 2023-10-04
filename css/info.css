@@ -34,6 +34,7 @@ section#info div.wrap article div.qcenter ul li h2 {
   
   font-size: 17px;
   height: 20px;
+  font-weight: 500;
 }
 section#info div.wrap article div.qcenter ul li:nth-child(3) a {
   
@@ -62,7 +63,7 @@ section#info div.wrap article div.qcenter ul li span {
 section#info div.wrap article div.qcenter ul li span p {
   
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
 }
 section#info div.wrap article div.qcenter ul li:nth-child(1) {
   
@@ -81,7 +82,7 @@ section#info div.wrap article div.qcenter ul li:nth-child(1) a {
   white-space: nowrap;
   height: 20px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
   border-color: #E4E4E4;
 }
 section#info div.wrap article div.qcenter ul li:nth-child(1) a:nth-of-type(2) {
@@ -102,7 +103,7 @@ section#info div.wrap div.app h2 {
 }
 section#info div.wrap div.app p {
   font-size: 11px;
-  font-weight: 300;
+  font-weight: 400;
 }
 section#info div.wrap div.app p:nth-of-type(2){
  

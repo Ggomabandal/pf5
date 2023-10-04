@@ -1,6 +1,6 @@
 #title {
   background-color: #000000;
-  position: relative
+  position: relative;
 }
 
 div#title::before {
@@ -13,10 +13,6 @@ div#title::before {
     top: 0;
 }
 #title .wrap {
-  background-image: url(../img/back.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -30,6 +26,7 @@ div#title::before {
   left: -80px;
   top: -86px;
   height: 700px;
+  z-index: 0;
 }
 #title .wrap div.movie div.video_wrap{
   
@@ -44,64 +41,82 @@ div#title::before {
 #title .wrap div.movie div.video_wrap video #j_movie{
   
 }
-#title .wrap ul.flex {
+#title .wrap div.commentwrap{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+#title .wrap div.commentwrap ul.flex {
   z-index: 1;
   color: white;
   line-height: 1.6;
   margin-left: 15px;
+  position: relative;
 }
-#title .wrap ul.flex li { 
+#title .wrap div.commentwrap ul.flex li { 
   gap: 10px;
   align-items: center;
   display: flex;
   margin: 10px 0;
 }
-#title .wrap ul.flex li .h3 {
+#title .wrap div.commentwrap ul.flex li .h3 {
   
   font-weight: 500;
 }
-#title .wrap ul.flex li p {
+#title .wrap div.commentwrap ul.flex li p {
   
 }
-#title .wrap div.playsound{
+#title .wrap div.commentwrap div.playsound{
   
   display: flex;
   gap: 7px;
 }
-#title .wrap div.playsound a {
-  padding: 3px 30px;
+#title .wrap div.commentwrap div.playsound a {
+  padding: 3px 22px;
   border-radius: 30px;
   background-color: #CDCECE;
   z-index:1;
   box-sizing: border-box;
+  line-height: 23px;
+  margin-left: 15px;
+  font-size: 14px;
 }
-#title .wrap div.playsound form.play {
+#title .wrap div.commentwrap div.playsound form {
   display: flex;
 }
-#title .wrap div.playsound form.play button.play {  
+#title .wrap div.commentwrap div.playsound form.stopb button.stop {  
   width: 30px;
   height: 30px;
   background-color: transparent;
   border-radius: 100%;
-  background-image: url(../img/play.svg);
+  background-image: url(../img/pause.svg);
   background-size: contain;
   font-size: 0;
   border: 1px solid;
   border-color:#979797;
   z-index: 1;
+  cursor: pointer;
 }
-#title .wrap div.playsound form.sound {  
-  display: flex;
+.play{
+  background-image: url(../img/play.svg) !important;
 }
-#title .wrap div.playsound form.sound button.sound {
+#title .wrap div.commentwrap div.playsound form.soundb button.sound {
   width: 30px;
   height: 30px;
   background-color: transparent;
   border-radius: 100%;
-  background-image: url(../img/sound.svg);
+  background-image: url(../img/volumeon.svg);
   background-size: contain;
   font-size: 0;
   border: 1px solid;
   border-color:#979797;
   z-index: 1;
+  cursor: pointer;
+}
+.soundon{
+  background-image: url(../img/volumeoff.svg) !important;
 }

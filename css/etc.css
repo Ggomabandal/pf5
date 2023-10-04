@@ -29,11 +29,12 @@ section#etc div.wrap article div.jemok a.more {
   
   width: 65px;
   height: 20px;
-  line-height: 20px;
+  line-height: 16px;
   border-radius: 20px;
   font-size: 11px;
   border-color: #F4F4F4;
   color: #906677;
+  box-sizing: border-box;
 }
 section#etc div.wrap article ul {
 
