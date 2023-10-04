@@ -106,6 +106,7 @@ section#event div.wrap div.hidden ul li::before{
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
+  cursor: pointer;
 }
 section#event div.wrap div.hidden ul li:nth-child(1)::before{
   background-image: url(../img/event1.jpg)
