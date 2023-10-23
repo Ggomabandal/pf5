@@ -21,7 +21,7 @@ https://www.cgv.co.kr/#none
 - index
 
 ## 작업기간
-- 11시간
+- 12시간
 
 ## 작성자 정보
 이주성
